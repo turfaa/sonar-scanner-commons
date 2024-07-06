@@ -50,7 +50,7 @@ class JarDownloader {
     List<File> files = new ArrayList<>();
     logger.debug("Extract sonar-scanner-commons-batch in temp...");
     files.add(jarExtractor.extractToTemp("sonar-scanner-commons-batch").toFile());
-    files.addAll(getScannerEngineFiles());
+    files.add(jarExtractor.extractToTemp("sonar-scanner-engine").toFile());
     return files;
   }
 

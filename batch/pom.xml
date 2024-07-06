@@ -18,7 +18,8 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>sonar-scanner-commons-batch-interface</artifactId>
       <version>${project.version}</version>
-      <scope>provided</scope>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/../batch-interface/target/sonar-scanner-commons-batch-interface-${project.version}.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.sonarsource.sonarqube</groupId>
